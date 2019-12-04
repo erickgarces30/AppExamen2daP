@@ -12,30 +12,6 @@ namespace AppExamen2daP
 {
     public partial class Form1 : Form
     {
-        //
-        private long esPrimo(int n)
-        {
-            int num = 0, cont=0;
-            for(int a=2;a<=n;a++)
-            {
-                bool primo = true;
-                int b = 2;
-                    while(primo==true && b<=(a/2))
-                {
-                    if(a%b==0)
-                    {
-                        primo = false;
-                    }
-                    b++;
-                }
-                if (primo == true)
-                {
-                    cont = 1 + cont;
-                    num = num + a;
-                }
-            }
-            return num;
-        }
         public Form1()
         {
             InitializeComponent();
@@ -43,11 +19,10 @@ namespace AppExamen2daP
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            int n;
-            n = int.Parse(this.txtIngreso.Text);
-            long primo = esPrimo(n);
-            this.txtSuma.Text = primo.ToString();
-
+            int limite = 0;
+            limite = int.Parse(this.txtIngreso.Text);
+            int suma = Clases.Examen.sumatoria(limite);
+            this.txtSuma.Text = suma.ToString();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -58,6 +33,11 @@ namespace AppExamen2daP
         private void txtIngreso_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
