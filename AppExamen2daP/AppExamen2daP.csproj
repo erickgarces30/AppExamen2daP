@@ -47,11 +47,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Examen.cs" />
+    <Compile Include="Clases\Vector.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAleatorioOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAleatorioOrden.Designer.cs">
+      <DependentUpon>frmAleatorioOrden.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSerieFactorial.cs">
       <SubType>Form</SubType>
@@ -63,6 +70,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAleatorioOrden.resx">
+      <DependentUpon>frmAleatorioOrden.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSerieFactorial.resx">
       <DependentUpon>frmSerieFactorial.cs</DependentUpon>

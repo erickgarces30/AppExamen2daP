@@ -16,7 +16,7 @@ namespace AppExamen2daP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmSerieFactorial());
+            Application.Run(new frmAleatorioOrden());
         }
     }
 }
